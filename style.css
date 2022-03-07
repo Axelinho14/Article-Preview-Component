@@ -1,0 +1,250 @@
+:root{
+    /* #Color */
+    --Very-Dark-Grayish-Blue: hsl(217, 19%, 35%);
+    --Desaturated-Dark-Blue: hsl(214, 17%, 51%);
+    --Grayish-Blue: hsl(212, 23%, 69%);
+    --Light-Grayish-Blue: hsl(210, 46%, 95%);
+
+    /* #Font */
+    --font-manrope: "Manrope";
+}
+*{
+    margin: 0cm;
+    padding: 0cm;
+    box-sizing: border-box;
+    font-family: var(--font-manrope);
+}
+body{
+    background-color: var(--Light-Grayish-Blue);
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 10cm;
+    width: 25.5cm;
+    border-radius: 0.3cm;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    z-index: 0;
+}
+#hidden-share{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 74.8%;
+    top: 46.8%;
+    width: 9cm;
+    height: 2.5cm;
+    transition: display 1s ease-in-out;
+}
+.container-share{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--Very-Dark-Grayish-Blue);
+    height: 2cm;
+    width: 9cm;
+    border-radius: 0.3cm;
+}
+.container-share p{
+    color: var(--Grayish-Blue);
+    font-size: 0.5cm;
+    letter-spacing: 0.2cm;
+    margin-left: 1.5cm;
+}
+.facebook{
+    margin-left: 0.5cm;
+    width: 0.8cm;
+}
+.twitter{
+    margin-left: 0.5cm;
+    width: 0.8cm;
+}
+.pinterest{
+    margin-left: 0.5cm;
+    width: 0.8cm;
+}
+.pointer{
+    background-color:var(--Very-Dark-Grayish-Blue);
+    top: 58%;
+    left: 40.5%;
+    transform:rotate(45deg);
+    position: absolute;
+    width: 1.2cm;
+    height: 0.7cm;
+}
+.img-wrapper{
+    height: 10cm;
+    width: 10cm;
+    overflow: hidden;
+}
+.img-decoration{
+    width: 123%;
+    height: 100%;
+    border-bottom-left-radius: 0.3cm;
+    border-top-left-radius: 0.3cm;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5cm;
+    padding-top: 1.2cm;
+}
+.main-text h1{
+    font-size: 0.7cm;
+    color: var(--Very-Dark-Grayish-Blue);
+    font-variation-settings: "wght" 700;
+}
+.main-text p{
+    font-size: 0.45cm;
+    color: var(--Desaturated-Dark-Blue);
+    margin-top: 0.5cm;
+    font-variation-settings: "wght" 500;
+    line-height: 0.7cm;
+}
+.share-profil{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0.8cm;
+    justify-content: space-between;
+    width: 12.6cm;
+}
+.icon-michelle{
+    width:11%;
+    border-radius: 1cm;
+}
+.name{
+    margin-left: -4cm;
+    font-size: 0.45cm;
+    color:var(--Grayish-Blue);
+    line-height: 0.7cm;
+}
+.name span{
+    color: var(--Very-Dark-Grayish-Blue);
+    font-variation-settings: "wght" 700;
+}
+.bck-share{
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Light-Grayish-Blue);
+    color: var(--Desaturated-Dark-Blue);
+    width: 1.2cm;
+    height: 1.2cm;
+    border-radius: 3cm;
+    transition: 0.2s;
+}
+.bck-share:hover{
+    cursor: pointer;
+}
+.br2{
+    display:none;
+}
+@media screen and (max-width: 625px){
+    body{
+        background-color: var(--Light-Grayish-Blue);
+        display: flex;
+        min-height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .container{
+        flex-direction: column;
+        height: 18cm;
+        width: 10cm;
+        position: relative;
+    }
+    .br1{
+        display: none;
+    }
+    .br2{
+        display:block;
+    }
+    #hidden-share{
+        z-index: 1;
+        left: 0%;
+        top: 89%;
+        width: 10cm;
+        height: 2.5cm;
+    }
+    .container-share{
+        height: 2cm;
+        width: 10cm;
+        border-top-left-radius:0cm;
+        border-top-right-radius:0cm;
+    }
+    .container-share p{
+        color: var(--Grayish-Blue);
+        font-size: 0.4cm;
+        letter-spacing: 0.2cm;
+        margin-left: 0.8cm;
+    }
+    .facebook{
+        margin-left: 0.5cm;
+        width: 0.7cm;
+    }
+    .twitter{
+        margin-left: 0.5cm;
+        width: 0.7cm;
+    }
+    .pinterest{
+        margin-left: 0.5cm;
+        width: 0.7cm;
+    }
+    .pointer{
+        display:none
+    }
+    .img-wrapper{
+        height: 8cm;
+        width: 10cm;
+        overflow: hidden;
+    }
+    .img-decoration{
+        width: 100%;
+        height: 120%;
+        border-top-right-radius: 0.3cm;
+        border-top-left-radius: 0.3cm;
+    }
+    .text{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0.8cm;
+        padding-top: 1.2cm;
+    }
+    .main-text h1{
+        font-size: 0.54cm;
+    }
+    .main-text p{
+        font-size: 0.43cm;;
+    }
+    .share-profil{
+        margin-top: 0.8cm;
+        width: 9cm;
+        justify-content: flex-start;
+    }
+    .icon-michelle{
+        width:15%;
+    }
+    .name{
+        margin-left:0.5cm;
+    }
+    .bck-share{
+        left: 79%;
+        z-index: 2;
+        position: absolute;
+        align-self: center;
+        width: 1.1cm;
+        height: 1.1cm;
+        border-radius: 3cm;
+        transition: 0.2s;
+    }
+}
+
+
+
